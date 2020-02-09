@@ -16,6 +16,10 @@
   content: "]";
 }
 
+label{
+  font-family : cursive;
+  font-weight: 700;
+}
 .menu > li {
   display: inline;
 }

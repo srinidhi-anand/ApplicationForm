@@ -7,28 +7,28 @@
 <body ng-controller="studentController"> 
     <h1>Registration Form</h1>
     <form ng-submit="submitStudnetForm()" >
-            <label for="firstName" >First Name: </label>
-            <input type="text" id="firstName" ng-model="student.firstName" /> <br />
+            <label for="firstName" >First Name </label><br />
+            <input type="text" id="firstName" ng-model="student.firstName" /> <br /> <br />
 
-            <label for="lastName">Last Name</label>
-                <input type="text" id="lastName" ng-model="student.lastName" /> <br />
-            <label for="dob" >Date Of Birth</label>
-                <input type="date" id="dob" ng-model="student.DoB" /> <br />
-            <label for="Email">Email Id</label>
-                <input type="email" id="email_id" ng-model="student.EmailId" /> <br />
+            <label for="lastName">Last Name</label><br />
+                <input type="text" id="lastName" ng-model="student.lastName" /> <br /> <br />
+            <label for="dob" >Date Of Birth</label><br />
+                <input type="date" id="dob" ng-model="student.DoB" /> <br /> <br />
+            <label for="Email">Email Id</label><br />
+                <input type="email" id="email_id" ng-model="student.EmailId" /> <br /> <br />
 
-            <label for="gender" >Gender</label>
+            <label for="gender" >Gender</label><br />
                 <select id="gender" ng-model="student.gender">
                     <option value="male">Male</option>
                     <option value="female">Female</option>
-                </select><br /> <br />
-                <span>Training Type</span>
-                    <label><input value="online" type="radio" name="training" ng-model="student.trainingType" />Online</label>
-                    <label><input value="onsite" type="radio" name="training" ng-model="student.trainingType" />OnSite</label> <br /><br />
-                <span>Subjects</span>
-                    <label><input type="checkbox" ng-model="student.maths" />Maths</label>
-                    <label><input type="checkbox" ng-model="student.physics" />Physics</label> 
-                    <label><input type="checkbox"  ng-model="student.chemistry" />Chemistry</label><br /><br />
+                </select><br /> <br /> <br />
+                <label for="trainingType" ><span>Training Type</span></label><br />
+                    <label><input value="online" type="radio" name="training" ng-model="student.trainingType" />Online</label><br />
+                    <label><input value="onsite" type="radio" name="training" ng-model="student.trainingType" />OnSite</label> <br /><br /> <br />
+               <label for="trainingType" ><span>Subjects</span></label> <br />
+                    <label><input type="checkbox" ng-model="student.maths" />Maths</label><br />
+                    <label><input type="checkbox" ng-model="student.physics" />Physics</label> <br />
+                    <label><input type="checkbox"  ng-model="student.chemistry" />Chemistry</label><br /><br /> <br />
        
         <input type="submit" value="Submit" />
         <input type="reset" ng-click="resetForm()" value="Reset" />
