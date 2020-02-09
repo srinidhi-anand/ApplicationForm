@@ -1,10 +1,5 @@
 /* app css stylesheet */
 
-.setup {
-  position: relative;
-  padding: 500px;
-}
-
 
 .menu {
   list-style: none;
@@ -32,5 +27,7 @@
 
 body{
   text-align:justify;
+  position: relative;
+  padding: 500px;
 }
 
