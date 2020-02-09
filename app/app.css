@@ -27,3 +27,8 @@
 body{
   text-align:justify;
 }
+
+.setup {
+  position: relative;
+  padding: 500px;
+}
